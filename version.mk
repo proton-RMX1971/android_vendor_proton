@@ -16,3 +16,11 @@ CUSTOM_ROM_VERSION := 12.2.1-test1
 
 ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.version.custom=$(CUSTOM_ROM_VERSION)
+
+# Build Date/Time for ZIP file name
+PROTON_DATE_YEAR := $(shell date +%Y)
+PROTON_DATE_MONTH := $(shell date +%m)
+PROTON_DATE_DAY := $(shell date +%d)
+PROTON_DATE_HOUR := $(shell date +%H)
+PROTON_DATE_MINUTE := $(shell date +%M)
+PROTON_BUILD_DATE := $(PROTON_DATE_YEAR)$(PROTON_DATE_MONTH)$(PROTON_DATE_DAY)-$(PROTON_DATE_HOUR)$(PROTON_DATE_MINUTE)
