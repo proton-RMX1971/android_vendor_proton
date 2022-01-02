@@ -16,10 +16,14 @@ $(call inherit-product, vendor/proton/themes/themes.mk)
 
 LOCAL_PATH := vendor/proton/apps
 
-# LineageOS apps
+# OctaviOS apps
 PRODUCT_PACKAGES += \
     ExactCalculator \
-    Jelly \
+    DeskClock
+
+# Messaging
+PRODUCT_PACKAGES += \
+    Messaging
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
