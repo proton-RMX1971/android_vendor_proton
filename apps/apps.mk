@@ -71,3 +71,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/gms_overlay
 
 endif
+
+ifeq ($(WITH_FOSS),true)
+
+$(call inherit-product, vendor/foss/foss.mk)
+
+endif
