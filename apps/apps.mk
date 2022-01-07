@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
 
 # Messaging
 PRODUCT_PACKAGES += \
-    Messaging
+    messaging
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
